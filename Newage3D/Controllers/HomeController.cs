@@ -26,5 +26,12 @@ namespace Newage3D.Controllers
 
             return View();
         }
+
+        public ActionResult Images()
+        {
+            ViewBag.Message = "Your images page.";
+
+            return View();
+        }
     }
 }
