@@ -15,5 +15,11 @@ namespace Newage3D.Controllers
 
             return View();
         }
+        public ActionResult SpriteSpin()
+        {
+            ViewBag.Message = "Your images page.";
+
+            return View();
+        }
     }
 }
