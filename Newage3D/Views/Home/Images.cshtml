@@ -7,11 +7,9 @@
 <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
 
-<div class="jumbotron">
     <h3>3D Images Viewer</h3>
-    <canvas id='canvas' width="465" height="465"></canvas>   
+    <canvas id='canvas' width="1150" height="365"></canvas>   
 
-</div>
 
 <script type="text/javascript">
     var stage;
@@ -25,37 +23,91 @@
         stage.mouseMoveOutside = true;
         createjs.Touch.enable(stage);
 
-        var imgList = ["http://jsrun.it/assets/N/b/D/X/NbDXj.jpg",
-            "http://jsrun.it/assets/f/K/7/y/fK7yE.jpg",
-            "http://jsrun.it/assets/j/U/q/d/jUqdG.jpg",
-            "http://jsrun.it/assets/q/o/4/j/qo4jP.jpg",
-            "http://jsrun.it/assets/i/Q/e/1/iQe1f.jpg",
-            "http://jsrun.it/assets/5/k/y/R/5kyRi.jpg",
-            "http://jsrun.it/assets/x/T/I/h/xTIhA.jpg",
-            "http://jsrun.it/assets/4/X/G/F/4XGFt.jpg",
-            "http://jsrun.it/assets/6/7/n/r/67nrO.jpg",
-            "http://jsrun.it/assets/k/i/r/8/kir8T.jpg",
-            "http://jsrun.it/assets/2/3/F/q/23Fqt.jpg",
-            "http://jsrun.it/assets/c/l/d/5/cld59.jpg",
-            "http://jsrun.it/assets/e/J/O/f/eJOf1.jpg",
-            "http://jsrun.it/assets/o/j/Z/x/ojZx4.jpg",
-            "http://jsrun.it/assets/w/K/2/m/wK2m3.jpg",
-            "http://jsrun.it/assets/w/K/2/m/wK2m3.jpg",
-            "http://jsrun.it/assets/4/b/g/V/4bgVf.jpg",
-            "http://jsrun.it/assets/4/m/1/8/4m18z.jpg",
-            "http://jsrun.it/assets/4/w/b/F/4wbFX.jpg",
-            "http://jsrun.it/assets/4/k/T/G/4kTGQ.jpg",
-            "http://jsrun.it/assets/s/n/C/r/snCrr.jpg",
-            "http://jsrun.it/assets/7/f/H/u/7fHuI.jpg",
-            "http://jsrun.it/assets/v/S/d/F/vSdFm.jpg",
-            "http://jsrun.it/assets/m/g/c/S/mgcSp.jpg",
-            "http://jsrun.it/assets/t/L/t/P/tLtPF.jpg",
-            "http://jsrun.it/assets/j/7/e/H/j7eHx.jpg",
-            "http://jsrun.it/assets/m/o/8/I/mo8Ij.jpg",
-            "http://jsrun.it/assets/n/P/7/h/nP7ht.jpg",
-            "http://jsrun.it/assets/z/f/K/S/zfKSP.jpg",
-            "http://jsrun.it/assets/2/3/4/U/234U6.jpg",
-            "http://jsrun.it/assets/d/Z/y/m/dZymk.jpg"];
+        var imgList = [
+            "@Url.Content("~/content/images/cars/1.png")",
+            "@Url.Content("~/content/images/cars/2.png")",
+            "@Url.Content("~/content/images/cars/3.png")",
+            "@Url.Content("~/content/images/cars/4.png")",
+            "@Url.Content("~/content/images/cars/5.png")",
+            "@Url.Content("~/content/images/cars/6.png")",
+            "@Url.Content("~/content/images/cars/7.png")",
+            "@Url.Content("~/content/images/cars/8.png")",
+            "@Url.Content("~/content/images/cars/9.png")",
+            "@Url.Content("~/content/images/cars/10.png")",
+            "@Url.Content("~/content/images/cars/11.png")",
+            "@Url.Content("~/content/images/cars/12.png")",
+            "@Url.Content("~/content/images/cars/13.png")",
+            "@Url.Content("~/content/images/cars/14.png")",
+            "@Url.Content("~/content/images/cars/15.png")",
+            "@Url.Content("~/content/images/cars/16.png")",
+            "@Url.Content("~/content/images/cars/17.png")",
+            "@Url.Content("~/content/images/cars/18.png")",
+            "@Url.Content("~/content/images/cars/19.png")",
+            "@Url.Content("~/content/images/cars/20.png")",
+            "@Url.Content("~/content/images/cars/21.png")",
+            "@Url.Content("~/content/images/cars/22.png")",
+            "@Url.Content("~/content/images/cars/23.png")",
+            "@Url.Content("~/content/images/cars/24.png")",
+            "@Url.Content("~/content/images/cars/25.png")",
+            "@Url.Content("~/content/images/cars/26.png")",
+            "@Url.Content("~/content/images/cars/27.png")",
+            "@Url.Content("~/content/images/cars/28.png")",
+            "@Url.Content("~/content/images/cars/29.png")",
+            "@Url.Content("~/content/images/cars/30.png")",
+            "@Url.Content("~/content/images/cars/31.png")",
+            "@Url.Content("~/content/images/cars/32.png")",
+            "@Url.Content("~/content/images/cars/33.png")",
+            "@Url.Content("~/content/images/cars/34.png")",
+            "@Url.Content("~/content/images/cars/35.png")",
+            "@Url.Content("~/content/images/cars/36.png")",
+            "@Url.Content("~/content/images/cars/37.png")",
+            "@Url.Content("~/content/images/cars/38.png")",
+            "@Url.Content("~/content/images/cars/39.png")",
+            "@Url.Content("~/content/images/cars/40.png")",
+            "@Url.Content("~/content/images/cars/41.png")",
+            "@Url.Content("~/content/images/cars/42.png")",
+            "@Url.Content("~/content/images/cars/43.png")",
+            "@Url.Content("~/content/images/cars/44.png")",
+            "@Url.Content("~/content/images/cars/45.png")",
+            "@Url.Content("~/content/images/cars/46.png")",
+            "@Url.Content("~/content/images/cars/47.png")",
+            "@Url.Content("~/content/images/cars/48.png")",
+            "@Url.Content("~/content/images/cars/49.png")",
+            "@Url.Content("~/content/images/cars/50.png")"
+
+
+
+            //"http://jsrun.it/assets/f/K/7/y/fK7yE.jpg",
+            //"http://jsrun.it/assets/j/U/q/d/jUqdG.jpg",
+            //"http://jsrun.it/assets/q/o/4/j/qo4jP.jpg",
+            //"http://jsrun.it/assets/i/Q/e/1/iQe1f.jpg",
+            //"http://jsrun.it/assets/5/k/y/R/5kyRi.jpg",
+            //"http://jsrun.it/assets/x/T/I/h/xTIhA.jpg",
+            //"http://jsrun.it/assets/4/X/G/F/4XGFt.jpg",
+            //"http://jsrun.it/assets/6/7/n/r/67nrO.jpg",
+            //"http://jsrun.it/assets/k/i/r/8/kir8T.jpg",
+            //"http://jsrun.it/assets/2/3/F/q/23Fqt.jpg",
+            //"http://jsrun.it/assets/c/l/d/5/cld59.jpg",
+            //"http://jsrun.it/assets/e/J/O/f/eJOf1.jpg",
+            //"http://jsrun.it/assets/o/j/Z/x/ojZx4.jpg",
+            //"http://jsrun.it/assets/w/K/2/m/wK2m3.jpg",
+            //"http://jsrun.it/assets/w/K/2/m/wK2m3.jpg",
+            //"http://jsrun.it/assets/4/b/g/V/4bgVf.jpg",
+            //"http://jsrun.it/assets/4/m/1/8/4m18z.jpg",
+            //"http://jsrun.it/assets/4/w/b/F/4wbFX.jpg",
+            //"http://jsrun.it/assets/4/k/T/G/4kTGQ.jpg",
+            //"http://jsrun.it/assets/s/n/C/r/snCrr.jpg",
+            //"http://jsrun.it/assets/7/f/H/u/7fHuI.jpg",
+            //"http://jsrun.it/assets/v/S/d/F/vSdFm.jpg",
+            //"http://jsrun.it/assets/m/g/c/S/mgcSp.jpg",
+            //"http://jsrun.it/assets/t/L/t/P/tLtPF.jpg",
+            //"http://jsrun.it/assets/j/7/e/H/j7eHx.jpg",
+            //"http://jsrun.it/assets/m/o/8/I/mo8Ij.jpg",
+            //"http://jsrun.it/assets/n/P/7/h/nP7ht.jpg",
+            //"http://jsrun.it/assets/z/f/K/S/zfKSP.jpg",
+            //"http://jsrun.it/assets/2/3/4/U/234U6.jpg",
+            //"http://jsrun.it/assets/d/Z/y/m/dZymk.jpg"
+        ];
         var images = [], loaded = 0, currentFrame = 0, totalFrames = imgList.length;
         var rotate360Interval, start_x;
 
@@ -65,7 +117,7 @@
         var bmp = new createjs.Bitmap();
         stage.addChild(bmp);
 
-        var myTxt = new createjs.Text("HTC One", '24px Ubuntu', "#ffffff");
+        var myTxt = new createjs.Text("Demo", '24px Ubuntu', "#ffffff");
         myTxt.x = myTxt.y = 20;
         myTxt.alpha = 0.08;
         stage.addChild(myTxt);
@@ -120,7 +172,7 @@
         }
 
 
-        //------------------------------- 
+        //-------------------------------
         function addNavigation() {
             stage.onMouseOver = mouseOver;
             stage.onMouseDown = mousePressed;
@@ -180,7 +232,7 @@
     body {
         background-color: #CCCCCC;
         margin: 0;
-        padding: 0;
+        /*padding: 0;*/
         overflow: hidden;
     }
 
